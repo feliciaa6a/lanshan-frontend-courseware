@@ -51,7 +51,7 @@ HTML和CSS学习
 
 div和span的区别是，div标签是块级元素，每个div标签都会从新行开始显示，占据一行，且div标签可以通过css样式来设置自身的宽度（也可省略，当没有使用css自定义宽度时，div标签的宽度为其的容器的100%）、高度，且还可以设置标签之间的距离（外边距和内边距）；div标签内可以添加其他的标签元素（行内元素、块级元素都行）。而span标签是行内元素，会在一行显示；span标签内只能添加行内元素的标签或文本。
 
-1. a标签
+   2.a标签
 
 <a>标签用于链接到一个网址或者一个文件，是一个超链接。
 
@@ -97,7 +97,7 @@ a:active {
 }
 ```
 
-1. img标签
+​     3.img标签
 
 <img/>标签是单标签，用于在页面中嵌入照片。
 
@@ -109,7 +109,7 @@ a:active {
 - `alt` 属性包含一条对图像的文本描述，是在图片不能正常显示时，例如路径错误时出现的文本提示。
 - `title` 属性是在鼠标在移动到元素上的文本提示。
 
-1. input标签
+​     4.input标签
 
  `<input>` 元素用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据，也是单标签。
 
@@ -149,7 +149,7 @@ CSS规则由两个主要部分构成：选择器以及一条或多条声明。�
   </style>
 ```
 
-1. 内部样式：整体放在head标签，在style标签内写CSS代码，作用仅在本页。
+   2.内部样式：整体放在head标签，在style标签内写CSS代码，作用仅在本页。
 
 ```HTML
 <!DOCTYPE>
@@ -172,7 +172,7 @@ CSS规则由两个主要部分构成：选择器以及一条或多条声明。�
 </html>
 ```
 
-1. 行内样式：直接在html元素内使用style，不推荐使用。
+​    3.行内样式：直接在html元素内使用style，不推荐使用。
 
 ```HTML
  <h1 style="color:red;">111111</h1>
@@ -189,7 +189,7 @@ CSS规则由两个主要部分构成：选择器以及一条或多条声明。�
 
 IE盒模型下，盒子的实际尺寸=设置的宽/高= 内容 -内边距 - 边框。（实际盒子空间不包括padding和border）
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141406243.png" alt="image-20231010141406243" style="zoom:80%;" />
+![image-20231025135230592](https://s2.loli.net/2023/10/25/nMLgsf7PBaSxFYq.png)
 
 ## 块级元素，行内元素，行内块元素
 
@@ -271,7 +271,7 @@ div{ font-size: 12px; color: red }
 /* 页面里所有盒子都将改变成此样式 */
 ```
 
-1. 类选择器：
+   2.类选择器：
 
 类选择器以" . " 进行标识，可以用于给多个HTML标签设置相同的样式，也可以给一个标签指定多个类名，从而达到更多的选择目的。
 
@@ -284,7 +284,7 @@ div{ font-size: 12px; color: red }
 <div class="test1 test2">天气很好</div>
 ```
 
-1. id选择器：
+   3.id选择器：
 
 id 选择器以" # " 进行标识，可以为标有特定 id 的 HTML 元素指定特定的样式。id属性唯一。
 
@@ -296,7 +296,7 @@ id 选择器以" # " 进行标识，可以为标有特定 id 的 HTML 元素指�
 <div id="wrap"> 你好</div>
 ```
 
-1. 通配符选择器：
+   4.通配符选择器：
 
 通配符选择器使用 " * " 定义，它表示选取页面中所有元素（标签）。
 
@@ -316,7 +316,7 @@ div p  { font-size: 12px; color: red; }
 /* 选择 div 里面所有的 p 标签元素 */
 ```
 
-1. 子选择器:
+   2.子选择器:
 
 子元素选择器（子选择器）只能选择作为某元素的**最近一级子元素**。
 
@@ -328,7 +328,7 @@ div > p { font-size: 12px; color: red; }
 /* 选择 div 里面所有最近一级 p 标签元素 */
 ```
 
-1. 并集选择器:
+  3.并集选择器:
 
 并集选择器可以选择多组标签, 同时为他们定义相同的样式，通过英文逗号" , "连接而成。通常用于集体声明。
 
@@ -338,7 +338,7 @@ div,.myclass,#psd { 样式声明 }
  /* 选择 div、.myclass和#psd元素 */ 
 ```
 
-1. [伪类选择器和伪元素](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)：
+   4.[伪类选择器和伪元素](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)：
 
 伪类是选择器的一种，它用于选择处于特定状态的元素，伪类和伪元素是用来修饰不在文档树中的部分。比如当它们是这一类型的第一个元素时，或者是当鼠标指针悬浮在元素上面的时候。伪类的操作对象是文档树中已有的元素，而伪元素则创建了一个文档数外的元素。因此，伪类与伪元素的区别在于：有没有创建一个文档树之外的元素。
 
@@ -348,7 +348,7 @@ p:first-letter {font-size: 5em ;color:orange;}
  /* 可以通过设置<p>的:first-letter伪元素来为其添加样式。这个时候，看起来好像是创建了一个虚拟的<span>元素并添加了样式，但实际上文档树中并不存在这个<span>元素。*/ 
 ```
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141448332.png" alt="image-20231010141448332" style="zoom:67%;" />
+![image-20231010141448332](https://s2.loli.net/2023/10/25/XwKUGVpxSjhqmTe.png)
 
 ### 选择器权重
 
@@ -361,7 +361,7 @@ p:first-letter {font-size: 5em ;color:orange;}
 - 如果两个相同权重的选择器作用在同一元素上：以后面出现的选择器为最后规则.
 - 一般为!important > 行内样式 > ID选择器 > 类选择器 > 标签 > 通配符 > 继承 > 浏览器默认属性 
 - （注意:“权值”和“权级”的概念是为了更好的理解权重而提出的，并不是真的存在的)
-  - <img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141523323.png" alt="image-20231010141523323" style="zoom: 67%;" />
+  - ![image-20231010141523323](https://s2.loli.net/2023/10/25/zWmjvU9oKEsPy3A.png)
 
 ## [CSS文本样式](https://www.runoob.com/css/css-text.html)
 
@@ -403,21 +403,21 @@ selector {
 
 - 可选项，设置文本内容的阴影颜色。
 
-1. offset-x：
+   2.offset-x：
 
 - 必选项，阴影在水平方向的偏移量。
 - 如果值小于 0 的话，则表示向左偏移。
 - 如果值等于 0 的话，则表示水平方向不发生任何偏移。
 - 如果值大于 0 的话，则表示向右偏移。
 
-1. offset-y：
+   3.offset-y：
 
 - 必选项，垂直方向阴影的偏移值。
 - 如果值小于 0 的话，则表示向上偏移。
 - 如果值等于 0 的话，则表示垂直方向不发生任何偏移。
 - 如果值大于 0 的话，则表示向下偏移。
 
-1. blur-raduis：
+   4.blur-raduis：
 
 - 可选项，设置文本内容的阴影模糊半径。
 - 不允许负值，如果没有指定，则默认为 0。值越大，阴影半径越大。
@@ -565,7 +565,7 @@ CSS边框属性允许你指定一个元素边框的样式和颜色。
 
 border-style属性可以有1-4个值
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141618388.png" alt="image-20231010141618388" style="zoom:67%;" />
+![image-20231010141618388](https://s2.loli.net/2023/10/25/2YiILtCd7uqrBaS.png)
 
 ### 边框宽度
 
@@ -650,7 +650,7 @@ https://blog.csdn.net/weixin_51081257/article/details/121305642
 - Flex布局更适合小规模的布局，可以简便、完整、响应式的实现各种页面布局。但是，设为Flex布局以后，其子元素的`float`、`clear`和`vertical-align`属性将失效。
 - Flex布局是一个完整的模块，它包括了一套完整的属性。其中采用 Flex 布局的元素，称为 Flex 容器，简称"**容器**"。它的所有子元素就是容器成员，称为 Flex 项目，简称"**项目**"。容器默认存在两个轴：**水平轴**（main axis）和**垂直轴**（cross axis），项目默认沿主轴排列（水平轴）：
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141704221.png" alt="image-20231010141704221" style="zoom:67%;" />
+![image-20231010141704221](https://s2.loli.net/2023/10/25/pCAVRGJdj9rqwBm.png)
 
 - **main** **axis**: Flex 父元素的主轴是指子元素布局的主要方向轴，它由属性flex-direction来确定主轴是水平还是垂直的，默认为水平轴。
 - **main-start & main-end**: 分别表示主轴的开始和结束，子元素在父元素中会沿着主轴从main-start到main-end排布。
@@ -689,7 +689,7 @@ https://blog.csdn.net/weixin_51081257/article/details/121305642
 
 `flex-direction: column-reverse`：沿垂直主轴从下到上排列，起点在下沿
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141725406.png" alt="image-20231010141725406" style="zoom: 50%;" />
+![image-20231010141725406](https://s2.loli.net/2023/10/25/pGvy2j1kMBVJLqW.png)
 
 - **flex-wrap**：容器内元素是否可以换行，它有三个属性值：
 
@@ -713,7 +713,7 @@ https://blog.csdn.net/weixin_51081257/article/details/121305642
 .container {    justify-content: flex-start | flex-end | center | space-between | space-around;}
 ```
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141755578.png" alt="image-20231010141755578" style="zoom: 33%;" />
+![image-20231010141755578](https://s2.loli.net/2023/10/25/PzZFemb19xE2shl.png)
 
 - **align-items：**定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。元素在交叉轴上的对齐方式，它有五个属性值：
 
@@ -721,7 +721,7 @@ https://blog.csdn.net/weixin_51081257/article/details/121305642
 .container {  align-items: flex-start | flex-end | center | baseline | stretch;}
 ```
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141815053.png" alt="image-20231010141815053" style="zoom: 50%;" />
+![image-20231010141815053](https://s2.loli.net/2023/10/25/w8qJPSGHjeZiQIB.png)
 
 - **align-content**：与 justify-content 属性类似，可以在容器的侧轴还有多余空间时调整项目的对齐方式。它有六个属性值：
 
@@ -797,7 +797,7 @@ shape 为椭圆形，size 为最远角，position 为中心。
 - **shape** 参数定义形状。它可接受 circle 或 ellipse 值。默认值为 ellipse（椭圆）。
 - **size** 参数定义渐变的大小。它可接受四个值：
 
-<img src="C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010141944918.png" alt="image-20231010141944918" style="zoom:50%;" />
+![image-20231010141839811](https://s2.loli.net/2023/10/25/hf2Nx1EsS9kGCdB.png)
 
 ```CSS
     .item1 {
@@ -948,10 +948,10 @@ CSS animations 使得可以将从一个 CSS 样式配置转换到另一个 CSS �
 
 1.写一个类似的html页面
 
-![image-20231010142032534](C:\Users\ZTY\AppData\Roaming\Typora\typora-user-images\image-20231010142032534.png)
+![image-20231010142032534](https://s2.loli.net/2023/10/25/oK4qHiAXPmbJxey.png)
 
 2.用flex实现以下画面效果
 
-<video id="video" controls="" src="C:\Users\ZTY\Desktop\前端\CSS\动态.mkv" preload="none">
+<img src="https://img-blog.csdnimg.cn/20210613155720998.gif#pic_center" style="zoom: 100%" />
 
 3.轮播图
