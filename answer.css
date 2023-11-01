@@ -31,14 +31,13 @@
 .swiper {
     position: relative;
     margin: 60px auto;
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 300px;
     overflow: hidden;
  }
  
  /*自动播放*/
  .swiper .swiper-wrapper {
-    margin-left: -600px;
     animation: swiperAnim 9s infinite;
     padding: 0;
     width: 3000px;
@@ -50,8 +49,6 @@
     width: 600px;
     list-style: none;
     line-height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
  }
 
 .swiper li img{
