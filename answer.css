@@ -26,15 +26,13 @@
   .bigitem{
     flex: 2;
   }
-  
+
+/* 轮播图 */
 .swiper {
     position: relative;
     margin: 60px auto;
     width: 600px;
     height: 600px;
-    text-align: center;
-    font-family: Arial;
-    color: #FFF;
     overflow: hidden;
  }
  
@@ -52,10 +50,8 @@
     width: 600px;
     list-style: none;
     line-height: 600px;
-    font-size: 100px;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
  }
 
 .swiper li img{
